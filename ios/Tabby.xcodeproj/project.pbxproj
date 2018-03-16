@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25A7490102CC3F5C3D759202 /* Pods_Tabby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C62E1A0D03CD051597FD6F8 /* Pods_Tabby.framework */; };
 		7AE50CAA205B17BE00F56EB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE50CA9205B17BE00F56EB8 /* AppDelegate.swift */; };
 		7AE50CAC205B17BE00F56EB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE50CAB205B17BE00F56EB8 /* ViewController.swift */; };
 		7AE50CAF205B17BE00F56EB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AE50CAD205B17BE00F56EB8 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5F7FDC71DB72277620999191 /* Pods-Tabby.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tabby.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tabby/Pods-Tabby.release.xcconfig"; sourceTree = "<group>"; };
 		7AE50CA6205B17BE00F56EB8 /* Tabby.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabby.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE50CA9205B17BE00F56EB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE50CAB205B17BE00F56EB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		7AE50CB0205B17BE00F56EB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AE50CB3205B17BE00F56EB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AE50CB5205B17BE00F56EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C62E1A0D03CD051597FD6F8 /* Pods_Tabby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tabby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6EEA45D9AB37C19E5534D7 /* Pods-Tabby.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tabby.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tabby/Pods-Tabby.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A7490102CC3F5C3D759202 /* Pods_Tabby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DBF208AD4107A849CAAA827 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C62E1A0D03CD051597FD6F8 /* Pods_Tabby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37DCB09EF1110EA9C8E83822 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF6EEA45D9AB37C19E5534D7 /* Pods-Tabby.debug.xcconfig */,
+				5F7FDC71DB72277620999191 /* Pods-Tabby.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7AE50C9D205B17BE00F56EB8 = {
 			isa = PBXGroup;
 			children = (
 				7AE50CA8205B17BE00F56EB8 /* Tabby */,
 				7AE50CA7205B17BE00F56EB8 /* Products */,
+				37DCB09EF1110EA9C8E83822 /* Pods */,
+				2DBF208AD4107A849CAAA827 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AE50CB8205B17BE00F56EB8 /* Build configuration list for PBXNativeTarget "Tabby" */;
 			buildPhases = (
+				5598906592CF67DDB79C2DC8 /* [CP] Check Pods Manifest.lock */,
 				7AE50CA2205B17BE00F56EB8 /* Sources */,
 				7AE50CA3205B17BE00F56EB8 /* Frameworks */,
 				7AE50CA4205B17BE00F56EB8 /* Resources */,
+				A89A6E94F7C97684D45AD06A /* [CP] Embed Pods Frameworks */,
+				E8005307F56E443BD860FB23 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5598906592CF67DDB79C2DC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tabby-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A89A6E94F7C97684D45AD06A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tabby/Pods-Tabby-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tabby/Pods-Tabby-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8005307F56E443BD860FB23 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tabby/Pods-Tabby-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AE50CA2205B17BE00F56EB8 /* Sources */ = {
@@ -272,6 +361,7 @@
 		};
 		7AE50CB9205B17BE00F56EB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF6EEA45D9AB37C19E5534D7 /* Pods-Tabby.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +376,7 @@
 		};
 		7AE50CBA205B17BE00F56EB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F7FDC71DB72277620999191 /* Pods-Tabby.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
