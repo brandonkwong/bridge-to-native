@@ -1,47 +1,59 @@
 PODS:
-  - boost-for-react-native (1.63.0)
+  - boost (1.59.0):
+    - boost/graph-includes (= 1.59.0)
+    - boost/math-includes (= 1.59.0)
+    - boost/numeric-includes (= 1.59.0)
+    - boost/pointer_cast-includes (= 1.59.0)
+    - boost/preprocessor-includes (= 1.59.0)
+    - boost/shared_ptr-includes (= 1.59.0)
+    - boost/string_algorithms-includes (= 1.59.0)
+  - boost/graph-includes (1.59.0)
+  - boost/math-includes (1.59.0)
+  - boost/numeric-includes (1.59.0)
+  - boost/pointer_cast-includes (1.59.0)
+  - boost/preprocessor-includes (1.59.0)
+  - boost/shared_ptr-includes (1.59.0)
+  - boost/string_algorithms-includes (1.59.0)
   - DoubleConversion (1.1.5)
   - Folly (2016.09.26.00):
-    - boost-for-react-native
+    - boost
     - DoubleConversion
-    - glog
-  - glog (0.3.4)
-  - React/Core (0.54.2):
-    - yoga (= 0.54.2.React)
-  - React/CxxBridge (0.54.2):
+    - GLog
+  - GLog (0.3.4)
+  - React/Core (0.51.0):
+    - yoga (= 0.51.0.React)
+  - React/CxxBridge (0.51.0):
     - Folly (= 2016.09.26.00)
     - React/Core
     - React/cxxreact
-  - React/cxxreact (0.54.2):
-    - boost-for-react-native (= 1.63.0)
+  - React/cxxreact (0.51.0):
+    - boost
     - Folly (= 2016.09.26.00)
     - React/jschelpers
-    - React/jsinspector
-  - React/DevSupport (0.54.2):
+  - React/DevSupport (0.51.0):
     - React/Core
     - React/RCTWebSocket
-  - React/fishhook (0.54.2)
-  - React/jschelpers (0.54.2):
+  - React/fishhook (0.51.0)
+  - React/jschelpers (0.51.0):
     - Folly (= 2016.09.26.00)
     - React/PrivateDatabase
-  - React/jsinspector (0.54.2)
-  - React/PrivateDatabase (0.54.2)
-  - React/RCTBlob (0.54.2):
+  - React/PrivateDatabase (0.51.0)
+  - React/RCTBlob (0.51.0):
     - React/Core
-  - React/RCTNetwork (0.54.2):
+  - React/RCTNetwork (0.51.0):
     - React/Core
-  - React/RCTText (0.54.2):
+  - React/RCTText (0.51.0):
     - React/Core
-  - React/RCTWebSocket (0.54.2):
+  - React/RCTWebSocket (0.51.0):
     - React/Core
     - React/fishhook
     - React/RCTBlob
-  - yoga (0.54.2.React)
+  - yoga (0.51.0.React)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
-  - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - GLog (from `../node_modules/react-native/third-party-podspecs/GLog.podspec`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
   - React/DevSupport (from `../node_modules/react-native`)
@@ -55,21 +67,21 @@ EXTERNAL SOURCES:
     :podspec: ../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec
   Folly:
     :podspec: ../node_modules/react-native/third-party-podspecs/Folly.podspec
-  glog:
-    :podspec: ../node_modules/react-native/third-party-podspecs/glog.podspec
+  GLog:
+    :podspec: ../node_modules/react-native/third-party-podspecs/GLog.podspec
   React:
     :path: ../node_modules/react-native
   yoga:
     :path: ../node_modules/react-native/ReactCommon/yoga
 
 SPEC CHECKSUMS:
-  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
+  boost: 30a15ffb6d9aa4646dd3caffc960753f4cb4ca4e
   DoubleConversion: ebb6747c5b66026ad4f97b789c3ceac6f18e57a6
-  Folly: 211775e49d8da0ca658aebc8eab89d642935755c
-  glog: 1de0bb937dccdc981596d3b5825ebfb765017ded
-  React: c237e42de9c70e5cac6eeb52b4cfd3a0910c1f00
-  yoga: 55da126afc384965b96bff46652464373b330add
+  Folly: b7255b29f1d693c375d642d0f04f0592181156d9
+  GLog: 3e4e4ae9746ce6bf6e9420c7fc1e08ad59c8ba1a
+  React: 541ba768b9855e10cdc76f55427a5cd0653ca806
+  yoga: 17521bbb0dd54a47c0b3ac43253e78cdac7488e0
 
-PODFILE CHECKSUM: 1c04f0ae6cc2821d60020dcb4b968515d70aeed2
+PODFILE CHECKSUM: dc21355ea594ef41ebd623c64a4fdb574e83387c
 
 COCOAPODS: 1.4.0
