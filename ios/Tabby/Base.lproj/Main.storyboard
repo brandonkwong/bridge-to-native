@@ -13,7 +13,7 @@
         <!--React Native-->
         <scene sceneID="FcE-aI-N3T">
             <objects>
-                <viewController id="GCc-pL-59b" sceneMemberID="viewController">
+                <viewController id="GCc-pL-59b" customClass="RNViewController" customModule="Tabby" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bWJ-EY-FA1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
