@@ -20,18 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
         // jsCodeLocation = NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle")
-        
-        let rootView = RCTRootView(bundleURL:jsCodeLocation as URL!, moduleName: "RNTab", initialProperties: nil, launchOptions:launchOptions)
 
-        self.bridge = rootView?.bridge
-
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let rootViewController = UIViewController()
-
-        rootViewController.view = rootView
-
-        self.window!.rootViewController = rootViewController;
-        self.window!.makeKeyAndVisible()
+        self.bridge = RCTBridge(bundleURL: jsCodeLocation, moduleProvider: nil, launchOptions: launchOptions)
 
         return true
     }

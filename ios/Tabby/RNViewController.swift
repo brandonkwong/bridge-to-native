@@ -7,13 +7,23 @@
 //
 
 import UIKit
+import React
 
 class RNViewController: UIViewController {
+
+    var rootView: RCTRootView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("RNViewController: Loaded!")
+  
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+
+        rootView = RCTRootView(bridge: appDelegate.bridge, moduleName: "RNTab", initialProperties: nil)
+
+        self.view.addSubview(rootView)
+
+        rootView.frame = self.view.bounds
     }
 
     override func didReceiveMemoryWarning() {
