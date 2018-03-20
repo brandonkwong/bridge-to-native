@@ -16,7 +16,7 @@ yarn && cd react-native && yarn
 
 ### Build
 
-The native iOS app can be built and ran from Xcode by opening Tabby.xcworkspace, located in the `./ios` directory. Before running, make sure to start the development server from within the `./react-native` directory:
+The native iOS app can be built and ran from Xcode by opening Tabby.xcworkspace, located in the `./ios` directory. Before running, make sure to start the React Native development server, which can be done from the root project or directly from within `./react-native`:
 
 ```
 yarn start
