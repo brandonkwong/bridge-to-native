@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
         // jsCodeLocation = NSBundle.mainBundle().URLForResource("main", withExtension: "jsbundle")
         
-        let rootView = RCTRootView(bundleURL:jsCodeLocation as URL!, moduleName: "BridgeToNative", initialProperties: nil, launchOptions:launchOptions)
+        let rootView = RCTRootView(bundleURL:jsCodeLocation as URL!, moduleName: "RNTab", initialProperties: nil, launchOptions:launchOptions)
 
         self.bridge = rootView?.bridge
 

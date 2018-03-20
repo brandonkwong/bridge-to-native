@@ -1,4 +1,4 @@
-package com.bridgetonative;
+package com.rntab;
 
 import android.app.Application;
 

@@ -1,3 +1,3 @@
-rootProject.name = 'BridgeToNative'
+rootProject.name = 'RNTab'
 
 include ':app'
