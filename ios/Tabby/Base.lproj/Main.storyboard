@@ -52,16 +52,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVb-Ch-147">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVb-Ch-147">
                                 <rect key="frame" x="163" y="104" width="49" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uR-P5-FU4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1uR-P5-FU4">
                                 <rect key="frame" x="130" y="315" width="114" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,6 +70,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UVb-Ch-147" firstAttribute="centerX" secondItem="1uR-P5-FU4" secondAttribute="centerX" id="A91-3d-Hyc"/>
+                            <constraint firstItem="8w1-Pv-ZHE" firstAttribute="bottom" secondItem="1uR-P5-FU4" secondAttribute="bottom" constant="266" id="C33-fR-4Sd"/>
+                            <constraint firstItem="1uR-P5-FU4" firstAttribute="centerY" secondItem="bup-yN-iK7" secondAttribute="centerY" id="TR8-fe-eWJ"/>
+                            <constraint firstItem="1uR-P5-FU4" firstAttribute="leading" secondItem="8w1-Pv-ZHE" secondAttribute="leading" constant="130" id="dIS-eH-Q5r"/>
+                            <constraint firstItem="1uR-P5-FU4" firstAttribute="centerX" secondItem="bup-yN-iK7" secondAttribute="centerX" id="lah-Gk-U2K"/>
+                            <constraint firstItem="UVb-Ch-147" firstAttribute="top" secondItem="8w1-Pv-ZHE" secondAttribute="top" constant="40" id="yq4-PN-2uW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8w1-Pv-ZHE"/>
                     </view>
                     <navigationItem key="navigationItem" title="Native" id="OqZ-UG-Iz1">
@@ -90,15 +96,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4w-Xt-jTt">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4w-Xt-jTt">
                                 <rect key="frame" x="161" y="104" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="N4w-Xt-jTt" firstAttribute="centerX" secondItem="Krg-TQ-Lci" secondAttribute="centerX" id="Qfz-QJ-ETX"/>
+                            <constraint firstItem="N4w-Xt-jTt" firstAttribute="top" secondItem="RZc-ul-Bhy" secondAttribute="top" constant="40" id="rBS-Qe-TN8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RZc-ul-Bhy"/>
                     </view>
                 </viewController>
