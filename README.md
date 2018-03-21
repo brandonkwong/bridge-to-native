@@ -1,6 +1,6 @@
 # Bridge to Native
 
-An exercise to integrate React Native into an existing iOS (Swift) app as a singular tab bar view.
+An exercise to integrate React Native with an existing iOS (Swift) app as a singular tab bar view.
 
 ## Getting Started
 
@@ -8,10 +8,10 @@ To get this example running, first `git clone` the project and `cd bridge-to-nat
 
 ### Install
 
-Both of the native iOS and react-native apps must have the same versions of React and React Native installed. Run `yarn` from both the root project, as well as the `./react-native` directory:
+Both of the native iOS and react-native apps must have the same versions of React and React Native installed. Use `yarn run setup` from the root project to install dependencies for both directories:
 
 ```
-yarn && cd react-native && yarn
+yarn run setup
 ```
 
 ### Build

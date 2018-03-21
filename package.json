@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "setup": "yarn && cd react-native/ && yarn && cd ../",
     "postinstall": "sed -i '' 's#<fishhook/fishhook.h>#\"fishhook.h\"#g' ./node_modules/react-native/Libraries/WebSocket/RCTReconnectingWebSocket.m",
     "start": "node ./react-native/node_modules/react-native/local-cli/cli.js start"
   },
