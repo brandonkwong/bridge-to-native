@@ -16,10 +16,16 @@ class RNViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-  
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
-        rootView = RCTRootView(bridge: appDelegate.bridge, moduleName: "RNTab", initialProperties: nil)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let mockData:NSDictionary = [
+            "native": [
+                ["name": "Leoric", "role": "warrior"],
+                ["name": "Abathur", "role": "specialist"]
+            ]
+        ]
+
+        rootView = RCTRootView(bridge: appDelegate.bridge, moduleName: "RNTab", initialProperties: mockData as [NSObject : AnyObject])
 
         self.view.addSubview(rootView)
 

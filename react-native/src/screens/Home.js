@@ -12,8 +12,10 @@ export default class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
+        <Text style={styles.title}>Welcome to React Native!</Text>
+        <Text style={styles.text}>{instructions}</Text>
+        <Text style={styles.title}>this.props.native</Text>
+        <Text style={styles.text}>{JSON.stringify(this.props.native)}</Text>
       </View>
     );
   }
@@ -26,14 +28,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
+  title: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
   },
-  instructions: {
+  text: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5,
+    marginBottom: 30,
   },
 });
