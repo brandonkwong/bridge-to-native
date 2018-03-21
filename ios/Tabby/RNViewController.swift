@@ -23,7 +23,7 @@ class RNViewController: UIViewController {
 
         self.view.addSubview(rootView)
 
-        rootView.frame = self.view.bounds
+        rootView.frame = CGRect(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height - self.tabBarController!.tabBar.bounds.height)
     }
 
     override func didReceiveMemoryWarning() {
