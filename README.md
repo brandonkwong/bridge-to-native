@@ -1,6 +1,6 @@
 # Bridge to Native
 
-An exercise to integrate React Native with an existing iOS (Swift) app as a singular tab bar view.
+An exercise to bridge a React Native component to an existing iOS (Swift) app as a singular tab bar view.
 
 ## Getting Started
 
